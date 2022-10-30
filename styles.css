@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Shadows Into Light', cursive;
+  overflow: hidden;
+  margin: 0;
+  background: #1d1d1d;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+h1 {
+  color: 	#660000;
+  text-align: center;
+  margin: 0;
+  font-size: 64px;
+  font-weight: 900;
+}
+
+.container {
+  width: 100vh;
+  display: flex;
+  padding: 0 20px;
+}
+
+.slide {
+  height: 80vh;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  color:aliceblue;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 800ms ease-in-out;
+}
+
+.slide h3 {
+  position: absolute;
+  font-size: 24px;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.slide.active {
+  flex: 10;
+}
+
+.slide.active h3 {
+  opacity: 1;
+  transition: opacity 0.5s ease-in 0.5s;
+}
+
+
+
